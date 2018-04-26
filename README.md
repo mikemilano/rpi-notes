@@ -1,5 +1,16 @@
 # rpi-notes
-Raspberry Pi notes
+Raspberry Pi notes. Currently I'm using v2 of Pi and Raspbian Stretch Lite downloaded here: https://www.raspberrypi.org/downloads/raspbian/
+
+## SSH
+```
+systemctl start ssh
+systemctl enable ssh
+```
+
+## Dependencies
+```
+apt-get install git apache2 php libapache2-mod-php
+```
 
 ## Wifi Setup for WPA2/AES
 
@@ -32,4 +43,15 @@ network={
     auth_alg=OPEN
 }
 
+```
+
+## Pi Cam Software
+
+```
+cd
+mkdir projects
+cd projects
+git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git
+cd RPi_Cam_Web_Interface
+sudo ./install.sh
 ```
